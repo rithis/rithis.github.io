@@ -1,0 +1,103 @@
+a {
+  color: darkblue;
+}
+
+a:hover {
+  background-color: darkblue;
+  text-decoration: none;
+  color: white;
+}
+
+::selection {
+  color: white;
+  background-color: darkblue;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "minion-pro", serif;
+}
+
+.company_name {
+  margin: .25em 0 .4em;
+  font-size: 7em;
+}
+
+.section_header {
+  margin: 0 0 .25em;
+  font-size: 4em;
+  font-style: italic;
+}
+
+.contacts {
+  width: 55%;
+  float: left;
+  margin-bottom: 1em;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-phone, .contacts-email {
+  font-size: 4em;
+}
+
+.contacts-phone {
+  margin-bottom: .25em;
+}
+
+.projects {
+  width: 40%;
+  float: right;
+  margin-bottom: 1em;
+}
+
+.projects-container {
+  width: 1px;
+}
+
+.projects-link {
+  display: inline-block;
+  margin-bottom: .25em;
+  font-size: 3em;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .container {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 70%;
+  }
+
+  .contacts, .projects {
+    margin-bottom: 3em;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .company_name {
+    font-size: 5em;
+  }
+}
+
+@media (orientation: portrait) {
+  .contacts, .projects {
+    width: 100%;
+    float: none;
+  }
+}

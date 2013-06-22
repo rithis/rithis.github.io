@@ -13,11 +13,30 @@ a:hover {
   background-color: darkblue;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
   font-family: "minion-pro", serif;
 }
+
+/* container clearfix { */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.container {
+  zoom: 1;
+}
+/* } container clearfix */
 
 .company_name {
   margin: .25em 0 .4em;

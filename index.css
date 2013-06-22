@@ -83,7 +83,7 @@ a:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 702px) {
   .container {
     font-size: 50%;
   }

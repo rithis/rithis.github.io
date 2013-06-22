@@ -62,12 +62,9 @@ body {
   list-style: none;
 }
 
-.contacts-phone, .contacts-email {
-  font-size: 3em;
-}
-
-.contacts-phone {
+.contacts-item {
   margin-bottom: .25em;
+  font-size: 3em;
 }
 
 .projects {
@@ -76,15 +73,15 @@ body {
   margin-bottom: 1em;
 }
 
-.projects-container {
-  width: 1px;
+.projects-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.projects-link {
-  display: inline-block;
+.projects-item {
   margin-bottom: .25em;
   font-size: 2.75em;
-  white-space: nowrap;
 }
 
 /* portrait */

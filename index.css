@@ -39,18 +39,19 @@ body {
 /* } container clearfix */
 
 .company_name {
-  margin: .25em 0 .4em;
-  font-size: 7em;
+  margin: .25em 0;
+  font-size: 8em;
+  font-weight: 400;
 }
 
 .section_header {
   margin: 0 0 .25em;
-  font-size: 4em;
+  font-size: 3em;
   font-style: italic;
 }
 
 .contacts {
-  width: 55%;
+  width: 60%;
   float: left;
   margin-bottom: 1em;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 .contacts-phone, .contacts-email {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .contacts-phone {
@@ -82,19 +83,26 @@ body {
 .projects-link {
   display: inline-block;
   margin-bottom: .25em;
-  font-size: 3em;
+  font-size: 2.75em;
   white-space: nowrap;
 }
 
-@media (max-width: 980px) {
-  .container {
-    font-size: 80%;
+/* portrait */
+@media (orientation: portrait) {
+  .contacts, .projects {
+    width: 100%;
+    float: none;
   }
 }
 
-@media (max-width: 768px) {
+/* tablet */
+@media (max-width: 1024px) {
   .container {
-    font-size: 70%;
+    font-size: 80%;
+  }
+
+  .company_name {
+    margin-bottom: .75em;
   }
 
   .contacts, .projects {
@@ -102,21 +110,20 @@ body {
   }
 }
 
-@media (max-width: 702px) {
+/* phone */
+@media (max-width: 767px) {
   .container {
     font-size: 50%;
   }
-}
 
-@media (max-width: 424px) {
   .company_name {
-    font-size: 5em;
+    margin-bottom: .475em;
   }
 }
 
-@media (orientation: portrait) {
-  .contacts, .projects {
-    width: 100%;
-    float: none;
+/* portrait phone */
+@media (max-width: 460px) {
+  .company_name {
+    font-size: 5em;
   }
 }
